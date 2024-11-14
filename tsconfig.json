@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          // Целевой стандарт JavaScript
+    "module": "es6",                           // Используемый модульный стандарт
+    "strict": true,                            // Включение строгого режима
+    "esModuleInterop": true,                   // Совместимость с CommonJS и ES модулями
+    "skipLibCheck": true,                      // Пропуск проверки типов библиотек
+    "forceConsistentCasingInFileNames": true,  // Обязательное соблюдение регистра имен файлов
+    "outDir": "./dist",                        // Папка для скомпилированных файлов
+    "rootDir": "./ts"                          // Корневая папка с исходниками TypeScript
+  },
+  "include": ["ts/**/*.ts"],                   // Включение всех файлов .ts в папке ts
+  "exclude": ["node_modules"]                  // Исключение node_modules
+}

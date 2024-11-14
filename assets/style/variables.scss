@@ -1,0 +1,16 @@
+$bgc: #F3F7FB;
+$gold: linear-gradient(180deg, #E0B330 0%, #FBEE88 51.1%, #E0B330 100%);
+$white: #FFFFFF;
+$black: #0E0F11;
+$blue: #2557F6;
+$gray: #C3C8CF;
+
+@mixin fs-n {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  @media all and (max-width: 743px) {
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+  }
+}

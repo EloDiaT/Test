@@ -1,0 +1,74 @@
+@use 'variables' as *;
+@use 'common' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  @media all and (max-width: 374px) {
+    font-size: 2.656vw;
+  }
+}
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: $bgc;
+  font-family: 'SF UI Display' serif;
+}
+.container {
+  max-width: 1480px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media all and (max-width: 743px) {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 1.6rem;
+  }
+}
+
+.fs-h1 {
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  font-weight: 600;
+  @media all and (max-width: 743px) {
+    font-size: 3.2rem;
+    line-height: 3.84rem;
+  }
+}
+.fs-b {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+}
+.fs-m {
+  font-size: 3.2rem;
+  line-height: 3.84rem;
+  font-weight: 600;
+}
+
+.fs-n {
+  @include fs-n();
+}
+
+.mt-24 {
+  margin-top: 2.4rem;
+}
+.mr-24 {
+  margin-right: 2.4rem;
+}
+.h3 {
+  color: $gray;
+}
+.h1 {
+  margin-top: 2.4rem;
+  @media all and (max-width: 743px) {
+    margin-top: 1.2rem;
+  }
+}
